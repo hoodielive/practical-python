@@ -10,3 +10,4 @@ class Child(Parent):
 
 child_obj = Child()
 
+parent_obj = Parent('Janbalt')
