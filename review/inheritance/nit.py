@@ -6,7 +6,7 @@ class Parent:
 class Child(Parent):
     def __init__(self):
         print("Child __init__")
-        Parent.__init__(self, "Ruby")
+        super().__init__("Ruby")
 
 child_obj = Child()
 
