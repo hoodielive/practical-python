@@ -5,11 +5,12 @@ class MapOdu(object):
         self.interpretation = interpretation
 
     def __str__(self):
-        return '%d-%d-%d' % (self.first_leg, self.second_leg, self.interpretation)
+        return self.first_leg, self.second_leg, self.interpretation
 
     def __repr__self(self):
-        return 'Date(%r,%r,%r)' % (self.first_leg, self.second_leg, self.interpretation)
+        return self.first_leg, self.second_leg, self.interpretation
 
 map_odu_1 = MapOdu('Osa', 'Okanran', 'An unexpected change leads to a new direction/opportunity.')
 
 print(map_odu_1.__repr__)
+print(map_odu_1.__str__())
